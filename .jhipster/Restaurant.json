@@ -1,0 +1,20 @@
+{
+  "applications": "*",
+  "changelogDate": "20231109125046",
+  "dto": "mapstruct",
+  "entityTableName": "restaurant",
+  "fields": [
+    {
+      "fieldName": "preparationCommande",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "heureDePreparation",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Restaurant",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

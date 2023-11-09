@@ -50,6 +50,12 @@ public class CacheConfiguration {
             createCache(cm, fr.it_akademy.jhtest.domain.User.class.getName() + ".authorities");
             createCache(cm, fr.it_akademy.jhtest.domain.PersistentToken.class.getName());
             createCache(cm, fr.it_akademy.jhtest.domain.User.class.getName() + ".persistentTokens");
+            createCache(cm, fr.it_akademy.jhtest.domain.Client.class.getName());
+            createCache(cm, fr.it_akademy.jhtest.domain.Client.class.getName() + ".commandes");
+            createCache(cm, fr.it_akademy.jhtest.domain.Commande.class.getName());
+            createCache(cm, fr.it_akademy.jhtest.domain.Commande.class.getName() + ".restaurants");
+            createCache(cm, fr.it_akademy.jhtest.domain.Restaurant.class.getName());
+            createCache(cm, fr.it_akademy.jhtest.domain.Restaurant.class.getName() + ".commandes");
             // jhipster-needle-ehcache-add-entry
         };
     }
