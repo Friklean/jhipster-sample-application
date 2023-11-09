@@ -33,7 +33,6 @@ Commande{restaurant} to Restaurant
 
 relationship OneToMany {
 Restaurant{livreur} to Livreur
-Livreur{client} to Client
 }
 
 
