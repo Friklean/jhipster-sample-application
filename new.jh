@@ -1,0 +1,33 @@
+entity Client {
+	
+	nom String
+	prenom String
+    adresse String
+	codePostal String
+	ville String
+}
+
+entity Commande {
+	listeArticle String
+    heureDeCommande String
+    paiement String    
+}
+
+entity Restaurant {
+	preparationCommande String
+	heureDePreparation String
+}
+
+relationship OneToMany {
+Client{commande} to Commande
+}
+
+relationship ManyToMany {
+Commande{restaurant} to Restaurant
+}
+
+
+dto Client, Commande, Restaurant with mapstruct
+service Client, Commande, Restaurant with serviceImpl
+
+
